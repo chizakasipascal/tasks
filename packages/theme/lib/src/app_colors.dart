@@ -20,6 +20,10 @@ class AppColors {
   static const successColor = Color.fromRGBO(35, 144, 59, 1);
   static const textErrorColor = Color.fromRGBO(255, 52, 42, 1);
   static const navibarBackground = Color.fromRGBO(249, 249, 249, 1);
+  static const textnavBarColorNoSelected = Color.fromRGBO(73, 69, 79, 1);
+  static const backgroundModaleSheetColors = Color.fromRGBO(249, 249, 249, 1);
+  static const primaryIconColors = Color.fromRGBO(10, 76, 97, 1);
+  static const textDisableColor = Color.fromRGBO(162, 162, 166, 1);
 
   /// usage:
   /// `AppColors.gray[50]`

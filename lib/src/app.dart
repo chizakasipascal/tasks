@@ -16,8 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Task Test',
       theme: AppTheme().light,
-      // darkTheme: AppTheme().light,
-      debugShowCheckedModeBanner: true,
+      debugShowCheckedModeBanner: false,
       home: Stackcreens(),
     );
   }

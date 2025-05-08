@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
+import 'package:task/src/const/assets.dart';
+import 'package:theme/theme.dart';
 
 import 'screens.dart';
 
@@ -30,34 +33,57 @@ class _StackcreensState extends State<Stackcreens> {
         elevation: 2.0,
         currentIndex: _selectedIndex, //New
         onTap: _onItemTapped,
-        items: const <BottomNavigationBarItem>[
+        items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-            icon: Icon(Icons.data_exploration_outlined),
-            activeIcon: Icon(Icons.data_exploration_rounded),
+            icon: SvgPicture.asset(
+              Assets.chat,
+              colorFilter: const ColorFilter.mode(
+                  AppColors.textnavBarColorNoSelected, BlendMode.srcIn),
+              semanticsLabel: 'Chats',
+            ),
+            activeIcon: SvgPicture.asset(
+              Assets.chat,
+              // colorFilter: const ColorFilter.mode(Colors.red, BlendMode.srcIn),
+              semanticsLabel: 'Chats',
+            ),
             label: 'Chat',
             tooltip: 'Chat',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.history_edu_rounded),
-            activeIcon: Icon(Icons.history_edu_outlined),
+            icon: SvgPicture.asset(
+              Assets.tasks,
+              colorFilter: const ColorFilter.mode(
+                  AppColors.textnavBarColorNoSelected, BlendMode.srcIn),
+              semanticsLabel: 'tasks',
+            ),
+            activeIcon: SvgPicture.asset(
+              Assets.tasks,
+              colorFilter:
+                  const ColorFilter.mode(AppColors.primary, BlendMode.srcIn),
+              semanticsLabel: 'Tasks',
+            ),
             label: 'Tasks',
             tooltip: 'Tasks',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.person_3_outlined),
-            activeIcon: Icon(Icons.person_3_rounded),
+            icon: SvgPicture.asset(
+              Assets.setting,
+              colorFilter: const ColorFilter.mode(
+                  AppColors.textnavBarColorNoSelected, BlendMode.srcIn),
+              semanticsLabel: 'Settings',
+            ),
+            activeIcon: SvgPicture.asset(
+              Assets.setting,
+              colorFilter:
+                  const ColorFilter.mode(AppColors.primary, BlendMode.srcIn),
+              semanticsLabel: 'Settings',
+            ),
             label: 'Settings',
             tooltip: 'Settings',
           ),
         ],
       ),
-      body: Padding(
-        padding: const EdgeInsets.symmetric(
-          horizontal: 20,
-          vertical: kTextTabBarHeight,
-        ),
-        child: _pages.elementAt(_selectedIndex),
-      ),
+      body: SafeArea(child: _pages.elementAt(_selectedIndex)),
     );
   }
 }

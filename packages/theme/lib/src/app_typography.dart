@@ -11,6 +11,7 @@ class AppTypography {
   TextStyle get extraLarge => GoogleFonts.inter(
         fontWeight: FontWeight.bold,
         fontSize: 32,
+        color: AppColors.black,
         height: _heightCalc(48, 34),
       );
 
@@ -20,12 +21,19 @@ class AppTypography {
         height: _heightCalc(36, 27),
       );
   TextStyle get appbarTitle => GoogleFonts.inter(
-        fontWeight: FontWeight.w600,
+        fontWeight: FontWeight.w700,
+        color: AppColors.black,
+        fontSize: 20,
+      );
+
+  TextStyle get appbarSecondTitle => GoogleFonts.inter(
+        fontWeight: FontWeight.w500,
+        color: AppColors.textErrorColor,
         fontSize: 20,
       );
 
   TextStyle get sectionTitle => GoogleFonts.inter(
-        fontWeight: FontWeight.w600,
+        fontWeight: FontWeight.w400,
         fontSize: 16,
         height: _heightCalc(23, 16),
       );
@@ -39,7 +47,7 @@ class AppTypography {
   TextStyle get body => GoogleFonts.inter(
         fontWeight: FontWeight.w400,
         fontSize: 15,
-        color: AppColors.gray[500],
+        color: AppColors.black,
         height: _heightCalc(20, 15),
       );
 
@@ -52,6 +60,7 @@ class AppTypography {
   TextStyle get button => GoogleFonts.inter(
         fontWeight: FontWeight.w500,
         fontSize: 14,
+        color: AppColors.successColor,
         height: _heightCalc(20, 15),
       );
 
