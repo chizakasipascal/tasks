@@ -29,7 +29,7 @@ class _StackcreensState extends State<Stackcreens> {
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: Colors.white,
+        backgroundColor: AppColors.inputBackgroundColor,
         elevation: 2.0,
         currentIndex: _selectedIndex, //New
         onTap: _onItemTapped,

@@ -67,7 +67,6 @@ class _ChatScreensState extends State<ChatScreens> {
           onTap: () {
             showModalBottomSheet(
               context: context,
-              backgroundColor: AppColors.backgroundModaleSheetColors,
               isScrollControlled: true,
               builder: (context) {
                 return FractionallySizedBox(
