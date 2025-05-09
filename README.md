@@ -1,16 +1,58 @@
-# task
+# 📱 Flutter Task app 
 
-A new Flutter project.
+A brief description of what your Flutter app does.
 
-## Getting Started
+## 🚀 Features
 
-This project is a starting point for a Flutter application.
+- ✅ 📱 Responsive design and animation 
+- ✅ 📦 State management (Bloc)
+- ✅ Request Https by Dio
 
-A few resources to get you started if this is your first Flutter project:
+## 📦 Requirements
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Make sure you have the following installed:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- [Flutter SDK](https://docs.flutter.dev/get-started/install)
+- Dart SDK (usually comes with Flutter)
+- Android Studio / Xcode / VS Code
+- Git
+
+## 🧑‍💻 Getting Started
+
+Follow these steps to clone and run the project:
+
+### 1. Clone the repository
+```bash
+    git clone https://github.com/chizakasipascal/tasks.git
+    cd your-repo-name
+
+```
+
+### 2. Install dependencies
+
+```bash
+    flutter pub get
+```
+### 3. Run the app
+
+- ✅  Connect a device or start an emulator, then run
+- ✅ flutter run
+
+### 4. 📂 Folder Structure
+lib/
+├── main.dart
+├── src/
+        const/
+        ├── models/ <!--- Local modeles --->
+        ├── models/
+        └── views/
+    app.dart
+├── packages/ <!--- Personal packages or customer packages --->
+            ├── blocs/ <!--- All Blocs or State management app --->
+            └── models/ <!--- Modal of data fetching --->
+            └── request/ <!--- Content all method https (use dio request) --->
+            └── theme/ <!--- styles apps (colors,font and others) --->
+
+
+<!--  -->
+
