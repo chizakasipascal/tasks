@@ -15,10 +15,12 @@ dependencies:
   flutter:
     sdk: flutter
 
-  
+  # Personalization pack localy
   theme:
     path: ./packages/theme
 
+  blocs:
+    path: ./packages/blocs
     
   cupertino_icons: ^1.0.8
   flutter_svg: ^2.1.0
