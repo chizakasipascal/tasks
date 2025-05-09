@@ -77,7 +77,6 @@ class _InputAddTasksState extends State<InputAddTasks> {
                           setState(() {
                             isEmpty = false;
                           });
-
                           debugPrint("isEmpty false");
                         }
                       },
