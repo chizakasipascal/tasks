@@ -3,8 +3,8 @@ import 'package:flutter/services.dart';
 import 'package:theme/theme.dart';
 import 'views/screens/StackScreens.dart';
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class TasksApp extends StatelessWidget {
+  const TasksApp({super.key});
 
   @override
   Widget build(BuildContext context) {

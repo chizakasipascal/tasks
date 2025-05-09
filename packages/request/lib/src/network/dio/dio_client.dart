@@ -8,8 +8,8 @@ class DioClient {
   final Dio _dio;
 
   DioClient(this._dio) {
-    _dio.options.connectTimeout = 15000;
-    _dio.options.receiveTimeout = 60000;
+    // _dio.options.connectTimeout = 15000;
+    // _dio.options.receiveTimeout = 60000;
     _dio.interceptors.add(DioInterceptors(_dio));
   }
 

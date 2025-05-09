@@ -31,5 +31,13 @@ class MyBlocObserver extends BlocObserver {
 
 void main() {
   Bloc.observer = MyBlocObserver();
-  runApp(const MyApp());
+  // MultiBlocProvider(
+  //   providers: [
+  //     BlocProvider<ActionsUsersBloc>(
+  //       create: (context) => ActionsUsersBloc(),
+  //     ),
+  //   ],
+  //   child: const TasksApp(),
+  // );
+  runApp(const TasksApp());
 }

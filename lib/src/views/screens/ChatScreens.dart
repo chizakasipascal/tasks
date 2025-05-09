@@ -84,7 +84,26 @@ class _ChatScreensState extends State<ChatScreens> {
               _onScrollDiretion();
               return true;
             },
-            child: CustomScrollView(
+            child: // wrap this code with Bloc provider to access the bloc
+                // BlocProvider(
+                //   create: (context) => ChatBloc(),
+                //   child:
+                // ),
+                // BlocBuilder<ChatBloc, ChatState>(
+                //   builder: (context, state) {
+                //     if (state is ChatLoading) {
+                //       return const Center(child: CircularProgressIndicator());
+                //     } else if (state is ChatLoaded) {
+                //       final characters = state.characters;
+                //       return _buildChatList(characters);
+                //     } else if (state is ChatError) {
+                //       return Center(child: Text('Error: ${state.message}'));
+                //     }
+                //     return const Center(child: Text('No data available'));
+                //   },
+                // ),
+
+                CustomScrollView(
               controller: scrollController,
               slivers: <Widget>[
                 SliverFloatingHeader(
