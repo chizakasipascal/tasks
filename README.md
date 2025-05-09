@@ -78,19 +78,17 @@ cd tasks
 - ✅ flutter run
 
 ### 4. 📂 Folder Structure
-lib/
-├── main.dart
-├── app.dart
-├── src/
-│   └── const/               # Constants
-│   └── models/              # Local models
-│   └── views/               # UI views
-├── packages/                # Custom packages
-    ├── blocs/               # Bloc state management
-    ├── models/              # Data fetching models
-    ├── request/             # Dio HTTP request methods
-    └── theme/               # App styling (colors, fonts, etc.)
+  ```  lib/
+    ├── main.dart
+    ├── app.dart
+    ├── src/
+    │   └── const/               # Constants
+    │   └── models/              # Local models
+    │   └── views/               # UI views
+    ├── packages/                # Custom packages
+        ├── blocs/               # Bloc state management
+        ├── models/              # Data fetching models
+        ├── request/             # Dio HTTP request methods
+        └── theme/               # App styling (colors, fonts, etc.)
 
-
-
-
+```
