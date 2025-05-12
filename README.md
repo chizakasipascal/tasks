@@ -21,41 +21,6 @@ Ensure you have the following tools installed:
 - Android Studio / Xcode / VS Code
 - Git
 
----
-
-## 🧑‍💻 Getting Started
-
-Follow these steps to set up and run the project:
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/chizakasipascal/tasks.git
-cd tasks
-```
-# 📱 Flutter Task App
-
-A simple and responsive Flutter app using Bloc for state management and Dio for HTTP requests.
-
----
-
-## 🚀 Features
-
-- ✅ Responsive UI with animations  
-- ✅ State management using Bloc  
-- ✅ API requests using Dio  
-
----
-
-## 📦 Requirements
-
-Ensure you have the following tools installed:
-
-- [Flutter SDK](https://docs.flutter.dev/get-started/install)
-- Dart SDK (included with Flutter)
-- Android Studio / Xcode / VS Code
-- Git
-
 
 ## 🧑‍💻 Getting Started
 
